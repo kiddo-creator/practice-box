@@ -1,0 +1,5 @@
+print('hello world'.capitalize())
+print('hello world'.upper())
+print('hello world'.__len__())
+print(len('Hello world'))
+print('hello world'.replace('world','programing'))

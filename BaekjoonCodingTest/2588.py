@@ -1,12 +1,22 @@
-A,B = map(int,input().split())
+class Cal(object):
 
-def set_number():
-    B%10 = B1
-    B&100 - B1 = B2
-    B//100 = B3
-    
-set_number()
+    def __init__(self, A, B):
+        self.A = A
+        self.B = B
 
-print(A*B1)
-print(A*B2)
-print(A*B3)
+    def set_number(self,A,B):
+        self.B1 = (self.B % 10)
+        self.B2 = self.B & 100 - self.B1
+        self.B3 = (self.B // 100)*100
+
+    def print_number():
+        print(A*B1)
+        print(A*B2)
+        print(A*B3)
+
+    def get_number():
+        A,B = map(int,input().split())
+        return A,B
+
+class Cal() = c1()
+c1.get_number()

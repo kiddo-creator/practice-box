@@ -18,5 +18,5 @@ class Cal(object):
         A,B = map(int,input().split())
         return A,B
 
-class Cal() = c1()
+Cal() = c1()
 c1.get_number()

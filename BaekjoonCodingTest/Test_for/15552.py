@@ -1,4 +1,4 @@
-import sys
-
-for x in sys.stdin.readline():
-    
+# import sys
+#
+# for x in sys.stdin.readline():
+#

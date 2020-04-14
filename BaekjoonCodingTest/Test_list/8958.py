@@ -1,4 +1,5 @@
-impot sysimport sys
+import sys
+
 N = int(sys.stdin.readline())
 list1=[0]*N
 

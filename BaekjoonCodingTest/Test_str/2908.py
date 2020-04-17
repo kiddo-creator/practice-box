@@ -1,4 +1,9 @@
-a=[]
-a = list(list(map(str,input().split())))
+a, b = input().split(' ')
 
-print(a[1].reverse())
+x = int(a[::-1])
+y = int(b[::-1])
+
+if x>y :
+    print(x)
+else :
+    print(y)

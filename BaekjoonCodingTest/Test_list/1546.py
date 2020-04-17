@@ -1,18 +1,11 @@
-import sys
+a = int(input())
+score_list = list(map(int, input().split()))
+up = max(score_list)
+result = 0
 
-a=int(input())
-l=[0]*a
-l=list(map(int,input().split()))
-print(l[1])
-max=0
-sum=0
+for i in range(0, a):
+    score_list[i] = score_list[i]/up*100
+    result = result + score_list[i]
 
-for i in range(len(l)):
-    if max<int(l[i]):
-        max=int(l[i])
-
-for i in range(len(l)):
-    l[i] = int(l[i])/max*100
-    sum = sum + int(l[i])
-ans = int(sum/len[i])
-print(ans)
+result = result/a
+print(result)

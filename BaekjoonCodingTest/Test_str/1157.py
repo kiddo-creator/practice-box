@@ -8,11 +8,11 @@ ans=[]
 for i in atoz:
     a_to_z.append(i)
 
-for i in range(len(alpha)):
+for i in range(len(alp)):
     ans.append(i)
 
-for i in atoz:
-    for j in range(len(alp)):
-        if arr[i]==arr[j]:
-
-            count.
+for i in range(len(alp)):
+    for j in alp:
+        if alp[i]==j:
+            ans.append(alp[i])
+            print(ans)

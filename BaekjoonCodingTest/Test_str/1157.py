@@ -1,18 +1,12 @@
-alp = input()
+words = input().lower()
+words_list = list(set(words))
+word_count = list()
 
-atoz = "abcdefghijzlmnopqrstuvwxyz"
-a_to_z=[]
+for i in words_list:
+    count = words.count(i)
+    word_count.append(count)
 
-ans=[]
-
-for i in atoz:
-    a_to_z.append(i)
-
-for i in range(len(alp)):
-    ans.append(i)
-
-for i in range(len(alp)):
-    for j in alp:
-        if alp[i]==j:
-            ans.append(alp[i])
-            print(ans)
+if(word_count.count(max(word_count)) >= 2):
+    print('?')
+else:
+    print(words_list[(word_count.index(max(word_count)))].upper())

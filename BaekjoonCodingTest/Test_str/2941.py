@@ -1,28 +1,7 @@
-x = input()
-d = len(x)
-i = 0
-while (i<len(x)):
-    if x[i] != x[-1]:
-        if x[i] == 'd':
-            if len(x[i:]) >= 3:
-                if x[i+1] == 'z' and x[i+2] == '=':
-                    i += 2
-                    d -= 2
+word = input()
+listn = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
-        if x[i] == 'c' or x[i] == 's' or x[i] == 'z':
-            if x[i+1] == '=':
-                i += 1
-                d -= 1
+for k in listn:
+    word = word.replace(k, '*')
 
-        if x[i] == 'c' or x[i] == 'd':
-            if x[i+1] == '-':
-                i += 1
-                d -= 1
-
-        if x[i] == 'l':
-            if x[i+1] == 'j':
-                i += 1
-                d -= 1
-
-    i += 1
-print(d)
+print(len(word))

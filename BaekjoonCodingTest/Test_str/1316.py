@@ -6,3 +6,4 @@ for i in range(testcase):
         if len(alp)==1:
             cnt=cnt+1
         else:
+            alp.find(x)

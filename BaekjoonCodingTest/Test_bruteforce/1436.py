@@ -1,14 +1,10 @@
-n=str(input())
-
-def maker(n):
-    sum=0
-    for i in n:
-        sum=sum+int(i)
-    print(sum)
-    return maker(int(n)+sum)
-
-maker(n)
-range(-1,-1,-1)
-# n="안녕"
-#
-# for i in n:
+n = int(input())
+cnt = 0
+six_n = 666
+while True:
+    if '666' in str(six_n):
+        cnt += 1
+    if cnt == n:
+        print(six_n)
+        break
+    six_n += 1

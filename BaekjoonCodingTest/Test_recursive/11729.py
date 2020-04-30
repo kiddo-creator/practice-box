@@ -1,7 +1,7 @@
 def Hanoi(n,start,tempt,end):
     if n==1:
         print(start,end)
-    else:4
+    else:
         Hanoi(n-1,start,end,tempt)
         Hanoi(1,start,tempt,end)
         Hanoi(n-1,tempt,start,end)

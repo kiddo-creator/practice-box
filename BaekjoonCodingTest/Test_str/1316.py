@@ -1,9 +1,17 @@
-testcase=int(input())
+testcase = int(input())
+groupword = 0
+
 for i in range(testcase):
-    alp=input()
-    cnt=0
-    for x in range(len(alp)):
-        if len(alp)==1:
-            cnt=cnt+1
-        else:
-            alp.find(x)
+    check = input()
+    for j in check:
+        for l in check:
+            if j==l:
+                if abs(check.index(j)-check.index(l)) > 1:
+                    groupword = groupword+1
+                    pass
+                else:
+                    pass
+            else:
+                pass
+
+print(testcase-groupword)

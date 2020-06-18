@@ -1,3 +1,5 @@
+import sys
+
 num = int(input())
 
 def star(i, j):

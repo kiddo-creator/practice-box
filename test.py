@@ -1,3 +1,1 @@
-f = open("score.txt","r")
-f.write("hi")
-f.close()
+print( " hello world")

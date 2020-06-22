@@ -1,26 +1,27 @@
-dog = [0,2,2,6,5,6,3,0,8,2]
-print(dog)
-n = len(dog)
-fox = []
+
+arr = [0,2,2,6,5,6,3,0,8,2]
+print("check your arr",arr)
+n = len(arr)
+arr_sort = []
 
 for x in range(n):
-    wolf=[]
-    cat = -1
+    new_arr=[]
+    flag = -1
 
-    for i in dog:
-        if cat == -1:
-            cat = i
+    for i in arr:
+        if flag == -1:
+            flag = i
         else:
-            if i < cat:
-                cat=i
+            if i < flag:
+                flag=i
 
-    for j in dog:
-        if j == cat:
-            fox += [j]
+    for j in arr:
+        if j == flag:
+            arr_sort += [j]
         else:
-            wolf += [j]
+            new_arr += [j]
 
-    dog = wolf
+    arr = new_arr
 
-sortResult = fox
+sortResult = arr_sort
 print(sortResult)

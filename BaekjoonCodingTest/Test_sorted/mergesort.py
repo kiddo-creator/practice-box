@@ -26,7 +26,7 @@ pivot = int(len(arr)/2)
 arr1 = arr[:pivot]
 arr2 = arr[pivot:]
 
-"merge sort Main code
+#merge sort Main code
 
 def merge_sort(arr):
     print("in merge_sort")

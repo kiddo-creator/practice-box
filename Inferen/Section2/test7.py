@@ -1,13 +1,23 @@
-n= int(input())
+a = int(input())
 cnt=0
-cnta=list()
+check_arr=list()
 
-for i in range(1,n+1):
-    for k in range(1,i):
-        if k!=1 and i%k==0:
+for i in range(2,a+1):
+    cnt = 0
+    for k in range(2,i):
+        if i%k==0:
             cnt=cnt+1
-            cnta.append(k)
             break
-        else:
-            pass
-print(cnt)
+
+    if cnt==0:
+         check_arr.append(i)
+         pass
+
+    cnt=0
+
+print(len(check_arr))
+
+# for i in check_arr:
+#     print(i)
+
+

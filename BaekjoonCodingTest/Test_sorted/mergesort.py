@@ -1,7 +1,6 @@
-
-import random
 #version 1 : random array
-arr = [ random.randint(1,50) for i in range(8) ]
+#import random
+#arr = [ random.randint(1,50) for i in range(8) ]
 
 
 #version 2 : read csv
@@ -16,16 +15,19 @@ arr = [ random.randint(1,50) for i in range(8) ]
 # arr=[]
 # for x in range(temp_rows):
 #     for y in range(temp_columns):
-#         arr.append(int(temp[x][y]))a
+#         arr.append(int(temp[x][y]))
 
+#version 3 : read number
+arr = list(map(int, input().split()))
 
-#arr pivot
+# arr pivot
 
 pivot = int(len(arr)/2)
 
 arr1 = arr[:pivot]
 arr2 = arr[pivot:]
 
+arr1 = arr
 #merge sort Main code
 
 def merge_sort(arr):
@@ -59,3 +61,5 @@ def merge_sort(arr):
 
     print("return merge", arr_merge)
     return arr_merge
+
+merge_sort(arr)
